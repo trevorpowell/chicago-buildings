@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    height: 100%;
+}
+#side {
+    position: relative;
+    height: 100%;
+    background: #222;
+    width: 270px;
+    float: right;
+}
+#meta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    background: #222;
+    z-index: 1;
+    padding-bottom: 5px;
+}
+#side h1 {
+    font-family: Arial, sans-serif;
+    font-size: 155%;
+    margin: 10px;
+    color: #fff;
+    text-shadow: 1px 1px #888;
+}
+#side p {
+    color: #ccc;
+    text-shadow: 1px 1px #666;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 110%;
+}
+#side p a {
+    color: #fff;
+    text-decoration: none;
+}
+#side p a:hover {
+    text-decoration: underline;
+}
+#side p.copyright {
+    font-size: 80%;
+    line-height: 130%;
+}
+#side div.social {
+    margin: 20px 10px 0 10px;
+}
+#side div.social:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+#side div.social div.twitter {
+    float: left;
+}
+#side div.social div.facebook {
+    float: right;
+}
+#side div.google-ad {
+    width: 250px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 0;
+}
+#side div.google-ad > ins {
+    display: block !important;
+}
+#main {
+    width: 100%;
+    height: 100%;
+}
+#map {
+    background: #000;
+    height: 100%;
+}
+.map-legend h2 {
+    margin: 0 0 5px 0;
+    font-size: 120%;
+    text-align: center;
+    text-shadow: 1px 1px #ccc;
+}
+.map-legend table.colors, .map-legend table.years {
+    border-collapse: collapse;
+}
+.map-legend table.colors {
+    width: 320px;
+    margin: 0 0 5px 15px;
+}
+.map-legend table.colors td {
+    text-indent: -9999em;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #fff;
+}
+.map-legend table.colors td.red {
+    background-color: #f00;
+}
+.map-legend table.colors td.red-orange {
+    background-color: #f40;
+}
+.map-legend table.colors td.orange {
+    background-color: #f80;
+}
+.map-legend table.colors td.yellow {
+    background-color: #ff0;
+}
+.map-legend table.colors td.yellow-green {
+    background-color: #8f0;
+}
+.map-legend table.colors td.green {
+    background-color: #0f0;
+}
+.map-legend table.colors td.green-blue {
+    background-color: #0ff;
+}
+.map-legend table.colors td.blue {
+    background-color: #08f;
+}
+.map-legend table.years {
+    width: 360px;
+}
+.map-legend table.years td {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 40px;
+    text-shadow: 1px 1px #ccc;
+}
+.leaflet-bottom.leaflet-right {
+    left: 0;
+    right: auto;
+}
+.map-legends {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.map-tooltip {
+    max-width: 500px;
+    text-shadow: 1px 1px #ccc;
+}
+.map-tooltip.closable .close {
+    display: none;
+}
